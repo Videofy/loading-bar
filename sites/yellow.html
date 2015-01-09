@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+	<!-- WEBSITE INFORMATIONS -->
+	<meta charset="utf-8">
+	<title>jQuery Youtube-like Ajax Loading Bar</title>
+	<meta name="title" content="jQuery Youtube-like Ajax" />
+	<meta name="description" content="Add an ajax loading bar like on Youtube to all your ajax links. Created by Pete R. (Founder of BucketListly) and edit for Videofy by Suriyaa Kudo (Founder of iSC Group)." />
+	<meta name="author" content="Pete R. & Suriyaa Kudo">
+
+	<!-- WEBSITE STYLE -->
+	<link href='css/website.css' rel='stylesheet' type='text/css'>
+
+	<!-- WEBSITE FONTS -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Pacifico:400' rel='stylesheet' type='text/css'>
+
+	<!-- LOADING BAR STYLESHEETS --> 
+	<link rel="stylesheet" type="text/css" href="css/yellow.css" />
+
+	<!-- LOADING BAR SCRIPTS -->	
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  	<script type="text/javascript" src="js/jquery.loadingbar.js"></script>
+	
+	<script>
+	  $(document).ready(function(){
+      $("#clickme").loadingbar({
+        done: function(data) {
+          $.each( data.shots, function( i, item ) {
+            $( "<img/>" ).attr( "src", item.image_teaser_url ).prependTo( $("#frame") );
+            if ( i === 11 ) {
+              return false;
+            }
+          });
+        }
+      });
+		});
+		
+	</script>
+	
+</head>
+<body>
+<!-- SITE START -->
+
+  <div class="wrapper">
+    <h1><span>Videofy</span>-like Ajax Loading Bar</h1>
+    <h2>Add an ajax loading bar like on Youtube and Videofy to all your ajax links.</h2>
+    <p class="credit">
+    Created it for YouTube by <a href="http://www.thepetedesign.com">Pete R.</a> (Founder of <a href="http://www.bucketlistly.com" target="_blank">BucketListly</a>)
+    <br />
+    Edited it for Videofy by <a href="http://isc-host.github.io/suriyaa.me">Suriyaa Kudo</a> (Founder of <a href="http://isc-host.github.io/group.isc" target="_blank">iSC Group</a>)
+    </p>
+    
+	  <div class="main">
+	    <div class="btns">
+	      <a href="http://api.dribbble.com/players/jackietrananh/shots?callback=?" data-datatype="json" data-type="GET" data-target="#frame" class="reload" id="clickme"><i class="customicon-download-alt"></i> Click Me</a>
+	      <br/><br/>
+	      <a class="reload btn" href="https://github.com/peachananr/loading-bar">for YouTube</a>
+	      <a class="reload btn" href="https://github.com/SuriyaaKudoIsc/loading-bar">for Videofy</a>
+	    </div>
+      <div class="frame" id="frame">
+      </div>
+    </div>
+  </div>
+
+<!-- SITE END -->
+</body>
+</html>
+<!-- Build the <> with <3 for Videofy & for YouTube -->
