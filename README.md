@@ -1,11 +1,14 @@
 Loading Bar
 ====
 
-A little jQuery plugin that will let you add a Youtube-like loading bar to all your ajax links 
-Created by [Pete R.](http://www.thepetedesign.com), Founder of [BucketListly](http://www.bucketlistly.com)
+A little jQuery plugin that will let you add a Youtube-like loading bar to all your ajax links.
+
+Created by [Pete R.](http://www.thepetedesign.com) (Founder of [BucketListly](http://www.bucketlistly.com)) and
+edited by [Suriyaa Kudo](http://isc-host.github.io/suriyaa.me) (Founder of [iSC Group](http://isc-host.github.io/group.me)).
 
 ## Demo
-[View demo](http://www.thepetedesign.com/demos/youtube_loadingbar_demo.html)
+* [View demo for Videofy](http://suriyaakudoisc.github.io/loading-bar/)
+* [View demo for YouTube](http://www.thepetedesign.com/demos/youtube_loadingbar_demo.html)
 
 [![Loading Bar](http://www.thepetedesign.com/images/loading_bar_image.png "Loading Bar")](http://www.thepetedesign.com/demos/youtube_loadingbar_demo.html)
 
