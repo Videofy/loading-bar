@@ -1,17 +1,20 @@
-#Loading Bar by Pete R.
+Loading Bar
+====
+
 A little jQuery plugin that will let you add a Youtube-like loading bar to all your ajax links 
 Created by [Pete R.](http://www.thepetedesign.com), Founder of [BucketListly](http://www.bucketlistly.com)
-
-License: [Attribution-ShareAlike 4.0 International](http://creativecommons.org/licenses/by-sa/4.0/deed.en_US)
-
-[![Loading Bar](http://www.thepetedesign.com/images/loading_bar_image.png "Loading Bar")](http://www.thepetedesign.com/demos/youtube_loadingbar_demo.html)
-
 
 ## Demo
 [View demo](http://www.thepetedesign.com/demos/youtube_loadingbar_demo.html)
 
+[![Loading Bar](http://www.thepetedesign.com/images/loading_bar_image.png "Loading Bar")](http://www.thepetedesign.com/demos/youtube_loadingbar_demo.html)
+
+## License
+=> [Attribution-ShareAlike 4.0 International](http://creativecommons.org/licenses/by-sa/4.0/deed.en_US)
+
 ## Usage
-To add a Youtube-like loading bar to your website, simply include the latest jQuery library found [here](http://jquery.com/download/) together with `jquery.loadingbar.js` and `loadingbar.css` into your document's `<head>` and simply call the function as shown below:
+### Ajax Parameters
+To add a Youtube & Videofy-like loading bar to your website, simply include the latest jQuery library found [here](http://jquery.com/download/) together with `jquery.loadingbar.js` and `loadingbar.css` into your document's `<head>` and simply call the function as shown below:
   
 ````javascript
 $(".ajax-call").loadingbar({
@@ -32,8 +35,9 @@ $(".ajax-call").loadingbar({
 	done: function(data) {}
 });
 ````
-Note: For options listed under Default Ajax Parameters, simply refer to [jQuery.ajax doc](http://api.jquery.com/jQuery.ajax/) for more info. 
+*Note:* For options listed under Default Ajax Parameters, simply refer to [jQuery.ajax doc](http://api.jquery.com/jQuery.ajax/) for more info. 
 
+### HTML markup
 For HTML markups, all you need is a link and a container to show the result:
   
 ````html
@@ -56,3 +60,8 @@ Now, each individual links will perform using its own settings.
 
 ## Other Resources
 - Tutorial (Coming Soon)
+
+
+----
+(c) *2013-present* **Pete R. for YouTube**
+(c) *2015-present* **Suriyaa Kudo for Videofy** 
